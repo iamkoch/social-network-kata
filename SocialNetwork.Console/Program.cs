@@ -7,9 +7,9 @@ namespace SocialNetwork.Console
         static void Main(string[] args)
         {
             var network = new SocialNetworkRunner(System.Console.WriteLine);
+
             while (network.Process(System.Console.ReadLine))
             {
-                Debug.WriteLine("Running..");
             }
         }
     }
